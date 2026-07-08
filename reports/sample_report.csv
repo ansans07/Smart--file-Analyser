@@ -1,0 +1,5 @@
+Name,Path,Extension,Category,SizeBytes,LastModified
+ml_notes.txt,sample_workspace/Documents/ml_notes.txt,txt,DOCUMENTS,58,2026-07-03T00:00:00Z
+ml_notes_copy.txt,sample_workspace/Documents/ml_notes_copy.txt,txt,DOCUMENTS,58,2026-07-03T00:00:00Z
+photo.jpg,sample_workspace/Images/photo.jpg,jpg,IMAGES,1024,2026-07-03T00:00:00Z
+code.java,sample_workspace/Misc/code.java,java,CODE,120,2026-07-03T00:00:00Z
