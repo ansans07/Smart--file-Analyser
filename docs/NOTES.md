@@ -1,12 +1,10 @@
-# Interview Notes - Smart File Organizer
-
-## One-minute project explanation
+#  Smart File Organizer
 
 Smart File Organizer is a Core Java console application that scans a folder recursively and helps users manage files. It categorizes files by extension, searches files by name, shows storage statistics, detects duplicate files using SHA-256 hashing, exports a CSV report, and safely moves duplicate files to a recovery folder while keeping one original copy.
 
 ## Why I built it
 
-I wanted one practical Java project that demonstrates OOP, Collections, File Handling, Exception Handling, and clean class separation without using web frameworks. The project solves a real problem: messy folders and duplicate files.
+I wanted one practical Java project that demonstrates OOP, Collections, File Handling, Exception Handling, and clean class separation. The project solves a real problem: messy folders and duplicate files.
 
 ## Main classes
 
@@ -89,20 +87,3 @@ Let `n` be the number of files and `S` be the total file size.
 - Category statistics: `O(n)`
 - Largest files: `O(n log n)` due to sorting
 - Duplicate detection: `O(S)` because file contents must be read to compute hashes
-
-## Possible interview questions
-
-### Why did you use OOP here?
-To separate responsibilities. Scanning, searching, statistics, organizing, report exporting, and duplicate detection are different responsibilities, so they are handled by different classes.
-
-### Why did you use HashMap for duplicates?
-A HashMap gives fast lookup. The SHA-256 hash is the key, and all files with the same hash are stored in a list.
-
-### How would you improve this project?
-I would add undo functionality, filters by size/date/type, a JavaFX GUI, and scheduled automatic scans.
-
-### What happens if the folder has very large files?
-Hashing large files takes more time because the program must read the file contents. The code reads files in chunks using a buffer, so it does not load the entire file into memory at once.
-
-### What did you learn?
-I learned practical file handling, recursive folder scanning, hashing, Java collections, service-based class design, and safe file operations.
