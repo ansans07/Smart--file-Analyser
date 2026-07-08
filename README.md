@@ -140,15 +140,3 @@ The project avoids destructive operations:
 - CSV export
 - Console-based menu programming
 
-## Resume Description
-
-**Smart File Organizer | Java, OOP, Collections, File Handling**  
-Built a Core Java console application to scan folders recursively, categorize files, search by filename, detect duplicate files using SHA-256 hashing, organize files into category folders, export CSV reports, and safely move duplicate files to a recovery folder.
-
-## Future Improvements
-
-- Add undo for duplicate recovery and organization
-- Add filters by file size/date/type
-- Add GUI using JavaFX
-- Add scheduled automatic scans
-- Add file preview for text files
